@@ -37,7 +37,7 @@ public class UserProfileUtil {
 			for(UserProfileBO userprofile:usersList)
 			{
 				//put the user record in the map
-				userprofileMap.put(Integer.valueOf(userprofile.getId()), userprofile);
+				userprofileMap.put(userprofile.getU_ID(), userprofile);
 			}
 		
 	}
@@ -77,7 +77,7 @@ public class UserProfileUtil {
 	 */
 	public void updateUserMap(UserProfileBO user)
 	{
-		userprofileMap.put(user.getId(),user);
+		userprofileMap.put(user.getU_ID(),user);
 	}
 	
 	/**

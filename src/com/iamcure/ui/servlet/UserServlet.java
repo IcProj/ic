@@ -2,16 +2,12 @@ package com.iamcure.ui.servlet;
 
 import java.io.IOException;
 import java.net.URLEncoder;
-import java.util.Calendar;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.iamcure.bo.UserBO;
 import com.iamcure.bo.listener.UserListener;
-import com.iamcure.dao.UserDAO;
 
 /**
  * Servlet implementation class UserServlet
@@ -44,6 +40,7 @@ public class UserServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@SuppressWarnings("deprecation")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String action=request.getParameter("action");
@@ -64,12 +61,12 @@ public class UserServlet extends HttpServlet {
 		
 		
 		}else if(action.equalsIgnoreCase("Authentication")){
-		String userName=request.getParameter("userName");
+		request.getParameter("userName");
 		
 		
 			
 		}else if(action.equalsIgnoreCase("Reset")){
-		String confirmPassword=request.getParameter("confirmPassword");
+		request.getParameter("confirmPassword");
 			
 		}
 	

@@ -17,5 +17,9 @@
 <property name="InsuranceCompany" column="InsuranceCompany" not-null="true"/>
 <property name="InsuranceID" column="InsuranceID" not-null="true"/>
 <property name="InsuranceExpaireDate" column="InsuranceExpaireDate" not-null="true"/>
+<property name="medication" column="medication" not-null="true"/>
+<property name="allergies" column="allergies" not-null="true"/>
+<property name="healthproblem" column="healthproblem" not-null="true"/>
+
   </class>
-</hibernate-mapping>
+  </hibernate-mapping>

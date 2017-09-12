@@ -2,38 +2,38 @@ package com.iamcure.bo;
 
 import java.util.Calendar;
 
-public class MedicalStoreBO {
+public class DiagnosticCenterBO {
 
-	private Integer U_ID;
-	private String MedicalstoreName;
+	private int U_ID;
+	private String DiagnosticCenterName;
 	private String Country;
 	private String StateName;
 	private String City;
 	private String PinCode;
 	private String StreetName;
 	private String PhoneNumber;
-	private String MedicalStorePicture;
+	private String DiagnosticCenterPhoto;
 	private String Descripition;
-	private String DrugLicenseNumber;
-	private Calendar CreatedDate;
+	private Calendar CreatedDate ;
 	private Calendar LastModifiedDate;
 	private String CreatedBy;
 	private String LastModifiedBy;
 	private String ContactPerson;
+	private String SamplesPickup;
+	private String DiagnosticsCenterLicenseNumber;
+	private String DiagnosticsCenterLicenseDocument;
 	private String IsVerified;
-	private String DrugDelivery;
-	private String DrugLicenseDocument;
-	public Integer getU_ID() {
+	public int getU_ID() {
 		return U_ID;
 	}
-	public void setU_ID(Integer u_ID) {
+	public void setU_ID(int u_ID) {
 		U_ID = u_ID;
 	}
-	public String getMedicalstoreName() {
-		return MedicalstoreName;
+	public String getDiagnosticCenterName() {
+		return DiagnosticCenterName;
 	}
-	public void setMedicalstoreName(String medicalstoreName) {
-		MedicalstoreName = medicalstoreName;
+	public void setDiagnosticCenterName(String diagnosticCenterName) {
+		DiagnosticCenterName = diagnosticCenterName;
 	}
 	public String getCountry() {
 		return Country;
@@ -71,23 +71,17 @@ public class MedicalStoreBO {
 	public void setPhoneNumber(String phoneNumber) {
 		PhoneNumber = phoneNumber;
 	}
-	public String getMedicalStorePicture() {
-		return MedicalStorePicture;
+	public String getDiagnosticCenterPhoto() {
+		return DiagnosticCenterPhoto;
 	}
-	public void setMedicalStorePicture(String medicalStorePicture) {
-		MedicalStorePicture = medicalStorePicture;
+	public void setDiagnosticCenterPhoto(String diagnosticCenterPhoto) {
+		DiagnosticCenterPhoto = diagnosticCenterPhoto;
 	}
 	public String getDescripition() {
 		return Descripition;
 	}
 	public void setDescripition(String descripition) {
 		Descripition = descripition;
-	}
-	public String getDrugLicenseNumber() {
-		return DrugLicenseNumber;
-	}
-	public void setDrugLicenseNumber(String drugLicenseNumber) {
-		DrugLicenseNumber = drugLicenseNumber;
 	}
 	public Calendar getCreatedDate() {
 		return CreatedDate;
@@ -119,23 +113,32 @@ public class MedicalStoreBO {
 	public void setContactPerson(String contactPerson) {
 		ContactPerson = contactPerson;
 	}
+	public String getSamplesPickup() {
+		return SamplesPickup;
+	}
+	public void setSamplesPickup(String samplesPickup) {
+		SamplesPickup = samplesPickup;
+	}
+	public String getDiagnosticsCenterLicenseNumber() {
+		return DiagnosticsCenterLicenseNumber;
+	}
+	public void setDiagnosticsCenterLicenseNumber(
+			String diagnosticsCenterLicenseNumber) {
+		DiagnosticsCenterLicenseNumber = diagnosticsCenterLicenseNumber;
+	}
+	public String getDiagnosticsCenterLicenseDocument() {
+		return DiagnosticsCenterLicenseDocument;
+	}
+	public void setDiagnosticsCenterLicenseDocument(
+			String diagnosticsCenterLicenseDocument) {
+		DiagnosticsCenterLicenseDocument = diagnosticsCenterLicenseDocument;
+	}
 	public String getIsVerified() {
 		return IsVerified;
 	}
 	public void setIsVerified(String isVerified) {
 		IsVerified = isVerified;
+	
+		
 	}
-	public String getDrugDelivery() {
-		return DrugDelivery;
-	}
-	public void setDrugDelivery(String drugDelivery) {
-		DrugDelivery = drugDelivery;
-	}
-	public String getDrugLicenseDocument() {
-		return DrugLicenseDocument;
-	}
-	public void setDrugLicenseDocument(String drugLicenseDocument) {
-		DrugLicenseDocument = drugLicenseDocument;
-	}
-
 }

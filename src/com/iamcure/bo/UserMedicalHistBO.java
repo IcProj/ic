@@ -12,6 +12,29 @@ public class UserMedicalHistBO {
 	  private String InsuranceCompany;   
 	  private String InsuranceID;
 	  private Calendar InsuranceExpaireDate;
+	  private String Medication;
+	  private String Allergies;
+	  private String Healthproblem;
+	  
+	  
+	public String getMedication() {
+		return Medication;
+	}
+	public void setMedication(String medication) {
+		Medication = medication;
+	}
+	public String getAllergies() {
+		return Allergies;
+	}
+	public void setAllergies(String allergies) {
+		Allergies = allergies;
+	}
+	public String getHealthproblem() {
+		return Healthproblem;
+	}
+	public void setHealthproblem(String healthproblem) {
+		Healthproblem = healthproblem;
+	}
 	public int getU_ID() {
 		return U_ID;
 	}

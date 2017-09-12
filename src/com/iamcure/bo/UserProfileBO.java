@@ -3,7 +3,6 @@ package com.iamcure.bo;
 import java.util.Calendar;
 
 public class UserProfileBO {
-	private int id;
 	
 	private int U_ID;
 	
@@ -17,7 +16,7 @@ public class UserProfileBO {
 	
 	private String Releation;
 	
-	private String Date_Of_Birth;
+	private Calendar Date_Of_Birth;
 	
 	private String AdharCard_Number;
 	
@@ -55,14 +54,6 @@ public class UserProfileBO {
 
 	public void setAdharCard_Number(String adharCard_Number) {
 		AdharCard_Number = adharCard_Number;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public int getU_ID() {
@@ -113,11 +104,12 @@ public class UserProfileBO {
 		Releation = releation;
 	}
 
-	public String getDate_Of_Birth() {
+
+	public Calendar getDate_Of_Birth() {
 		return Date_Of_Birth;
 	}
 
-	public void setDate_Of_Birth(String date_Of_Birth) {
+	public void setDate_Of_Birth(Calendar date_Of_Birth) {
 		Date_Of_Birth = date_Of_Birth;
 	}
 

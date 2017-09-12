@@ -2,26 +2,27 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-  <class name="om.iamcure.bo.UserBO" table="user">
+  <class name="om.iamcure.bo.UserBO" table="medicalstore">
     <id name="U_id" column="U_id">
       <generator class="identity" />
     </id>
-    <property name="fullName" column="fullName" not-null="true" />
-	<property name="MedicalstoreName" column="MedicalstoreName" not-null="true" />
+    <property name="MedicalstoreName" column="MedicalstoreName" not-null="true" />
 	<property name="Country" column="Country" not-null="true" />
 	<property name="StateName" column="StateName" not-null="true" />
 	<property name="City" column="City" not-null="true" />
 	<property name="PinCode" column="PinCode" not-null="true" />
 	<property name="StreetName" column="StreetName" not-null="true" />
 	<property name="PhoneNumber" column="PhoneNumber" not-null="true" />
-	<property name="DiagnosticCenterPhoto" column="DiagnosticCenterPhoto" not-null="true" />
+	<property name="MedicalStorePicture" column="MedicalStorePicture" not-null="true" />
 	<property name="Descripition" column="Descripition" not-null="true" />
-	<property name="StoreTimings" column="StoreTimings" not-null="true" />
-	<property name="StoreRating" column="StoreRating" not-null="true" />
-	<property name="StoreReview" column="StoreReview" not-null="true" />
-	<property name="MedicalPrescription" column="MedicalPrescription" not-null="true" />
-	<property name="Report" column="Report" not-null="true" />
+	<property name="DrugLicenseNumber" column="DrugLicenseNumber" not-null="true" />
 	<property name="CreatedDate" column="CreatedDate" not-null="true" />
 	<property name="LastModifiedDate" column="LastModifiedDate" not-null="true" />
+	<property name="CreatedBy" column="CreatedBy" not-null="true" />
+	<property name="LastModifiedBy" column="LastModifiedBy" not-null="true" />
+	<property name="ContactPerson" column="ContactPerson" not-null="true" />
+	<property name="IsVerified" column="IsVerified" not-null="true" />
+	<property name="DrugDelivery" column="DrugDelivery" not-null="true" />
+	<property name="DrugLicenseDocument" column="DrugLicenseDocument" not-null="true" />
   </class>
 </hibernate-mapping>
